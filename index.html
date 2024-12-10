@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chronix</title>
+    <link rel="icon" type="image/x-icon" href="https://tse1.mm.bing.net/th?id=OIG3.MSyyQ8SshnjY8GKqXHOF&pid=ImgGn">
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+    href='https://fonts.googleapis.com/css?family=Imperial Script' 
+    rel='stylesheet'
+    />
+    <link 
+    href='https://fonts.googleapis.com/css?family=Lobster' 
+    rel='stylesheet'
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" 
+    rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload ="initClock()">
+    <button id="toggle-theme">Toggle theme</button>
+    <div class="container">
+      <div class="section-container">
+        <button id="focus" class="btn btn-timer btn-focus">Focus</button>
+        <button id="shortbreak" class="btn btn-shortbreak">Short Break</button>
+        <button id="longbreak" class="btn btn-longbreak">Long Break</button>
+      </div>
+      <div class="time-btn-container">
+        <span id="time"></span>
+        <div class="btn-container">
+          <button id="btn-start" class="show">Start</button>
+          <button id="btn-pause" class="hide">Pause</button>
+          <button id="btn-reset" class="hide">
+            <i class="fa-solid fa-rotate-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--Clock start-->
+    <div class="datetime">
+      <div class="date">
+          <span id="dayname">Day</span>,
+          <span id="month">Month</span>
+          <span id="daynum" >00</span>
+      </div>
+      <div class="time">
+        <span id="hour">00</span>:
+        <span id="minutes">00</span>:
+        <span id="seconds">00</span>
+        <span id="period">AM</span>
+      </div>
+    </div>
+    <!--Clock End-->
+    <!-- quote start -->
+    <div class="qcontainer">
+      <p id="quote-text" onclick="displayRandomQuote()">Click here to see a new quote</p>
+      <span id="quote-author"></span>
+    </div>
+    <!-- quote end -->
+    <div class="inputBox">
+        <input type="text" required="required">
+      <span>What do you want to focus on?</span>
+    </div>
+    <h1 id="title">Chronix</h1>
+    <h3 id="Name"> by Ocean He</h3>
+    <!-- <a href="#" class="button">Mode</a> -->
+    <!-- Script -->
+    <script src="script.js"></script>
+   
+  </body>
